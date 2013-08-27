@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="2.0.2" sequence="1" timestamp="1377075533871" analysisTimestamp="1377075524770" release="">
+  <Project projectName="inf101-oving1-2">
+    <Jar>/home/poglesbyg/Downloads/inf101-oving1-2/bin</Jar>
+    <AuxClasspathEntry>/home/poglesbyg/Downloads/inf101-oving1-2/bin</AuxClasspathEntry>
+    <AuxClasspathEntry>/usr/lib64/eclipse/dropins/jdt/plugins/junit.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/usr/lib64/eclipse/dropins/jdt/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar</AuxClasspathEntry>
+    <SrcDir>/home/poglesbyg/Downloads/inf101-oving1-2/src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" first="1">
+    <Class classname="Avdeling">
+      <SourceLine classname="Avdeling" sourcefile="Avdeling.java" sourcepath="Avdeling.java"/>
+    </Class>
+    <Method classname="Avdeling" name="lesBehandlingerFraFil" signature="(Ljava/lang/String;)Z" isStatic="false">
+      <SourceLine classname="Avdeling" start="201" end="239" startBytecode="0" endBytecode="1163" sourcefile="Avdeling.java" sourcepath="Avdeling.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+    </Method>
+    <SourceLine classname="Avdeling" start="205" end="205" startBytecode="32" endBytecode="32" sourcefile="Avdeling.java" sourcepath="Avdeling.java"/>
+  </BugInstance>
+  <BugInstance type="HE_EQUALS_USE_HASHCODE" priority="2" abbrev="HE" category="BAD_PRACTICE" first="1">
+    <Class classname="Pasientjournal">
+      <SourceLine classname="Pasientjournal" sourcefile="Pasientjournal.java" sourcepath="Pasientjournal.java"/>
+    </Class>
+    <Method classname="Pasientjournal" name="equals" signature="(Ljava/lang/Object;)Z" isStatic="false">
+      <SourceLine classname="Pasientjournal" start="66" end="74" startBytecode="0" endBytecode="111" sourcefile="Pasientjournal.java" sourcepath="Pasientjournal.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="Pasientjournal">
+      <SourceLine classname="Pasientjournal" sourcefile="Pasientjournal.java" sourcepath="Pasientjournal.java"/>
+    </Class>
+    <Field classname="Pasientjournal" name="ekstra" signature="I" isStatic="false">
+      <SourceLine classname="Pasientjournal" sourcefile="Pasientjournal.java" sourcepath="Pasientjournal.java"/>
+    </Field>
+    <SourceLine classname="Pasientjournal" start="20" end="20" startBytecode="6" endBytecode="6" sourcefile="Pasientjournal.java" sourcepath="Pasientjournal.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Wed, 21 Aug 2013 10:54:34 +0200" total_classes="5" referenced_classes="25" total_bugs="3" total_size="204" num_packages="1" vm_version="23.7-b01" cpu_seconds="26.38" clock_seconds="9.14" peak_mbytes="370.59" alloc_mbytes="455.12" gc_seconds="0.11" priority_2="2" priority_1="1">
+    <PackageStats package="" total_bugs="3" total_types="5" total_size="204" priority_2="2" priority_1="1">
+      <ClassStats class="Avdeling" sourceFile="Avdeling.java" interface="false" size="115" bugs="1" priority_1="1"/>
+      <ClassStats class="Helsepersonell" sourceFile="Helsepersonell.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="Hjelpeklasse" sourceFile="Hjelpeklasse.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="Pasientjournal" sourceFile="Pasientjournal.java" interface="false" size="41" bugs="2" priority_2="2"/>
+      <ClassStats class="Sykehus" sourceFile="Sykehus.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1336" invocations="351" avgMicrosecondsPerInvocation="3806" maxMicrosecondsPerInvocation="63210" standardDeviationMircosecondsPerInvocation="7999"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="944" invocations="2" avgMicrosecondsPerInvocation="472118" maxMicrosecondsPerInvocation="647037" standardDeviationMircosecondsPerInvocation="174919"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="381" invocations="25" avgMicrosecondsPerInvocation="15253" maxMicrosecondsPerInvocation="63876" standardDeviationMircosecondsPerInvocation="19213"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="326" invocations="31" avgMicrosecondsPerInvocation="10547" maxMicrosecondsPerInvocation="98263" standardDeviationMircosecondsPerInvocation="23451"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="302" invocations="31" avgMicrosecondsPerInvocation="9772" maxMicrosecondsPerInvocation="100550" standardDeviationMircosecondsPerInvocation="22499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="289" invocations="25" avgMicrosecondsPerInvocation="11577" maxMicrosecondsPerInvocation="81340" standardDeviationMircosecondsPerInvocation="17610"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="216" invocations="28" avgMicrosecondsPerInvocation="7737" maxMicrosecondsPerInvocation="96545" standardDeviationMircosecondsPerInvocation="17989"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="211" invocations="22" avgMicrosecondsPerInvocation="9616" maxMicrosecondsPerInvocation="19407" standardDeviationMircosecondsPerInvocation="6914"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="201" invocations="318" avgMicrosecondsPerInvocation="634" maxMicrosecondsPerInvocation="10742" standardDeviationMircosecondsPerInvocation="1297"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="168" invocations="28" avgMicrosecondsPerInvocation="6029" maxMicrosecondsPerInvocation="67956" standardDeviationMircosecondsPerInvocation="12798"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="141" invocations="91" avgMicrosecondsPerInvocation="1553" maxMicrosecondsPerInvocation="15308" standardDeviationMircosecondsPerInvocation="2046"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="125" invocations="28" avgMicrosecondsPerInvocation="4495" maxMicrosecondsPerInvocation="45474" standardDeviationMircosecondsPerInvocation="9185"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="123" invocations="25" avgMicrosecondsPerInvocation="4935" maxMicrosecondsPerInvocation="25024" standardDeviationMircosecondsPerInvocation="7349"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="122" invocations="28" avgMicrosecondsPerInvocation="4370" maxMicrosecondsPerInvocation="37613" standardDeviationMircosecondsPerInvocation="7136"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="95" invocations="25" avgMicrosecondsPerInvocation="3816" maxMicrosecondsPerInvocation="26328" standardDeviationMircosecondsPerInvocation="5701"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1377075533866" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
