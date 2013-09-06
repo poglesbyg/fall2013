@@ -54,7 +54,7 @@ void *Object_new(size_t size, Object proto, char *description) {
     // initialize it with whatever init we were given
     if(!el->init(el)) {
         // looks like it didn't initialize properly
-        el->destory(el);
+        el->destroy(el);
         return NULL;
     } else {
         // all done, we made an object of any type

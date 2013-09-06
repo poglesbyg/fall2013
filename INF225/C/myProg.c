@@ -2,9 +2,9 @@
 
 int pof(int i, int j) {
 
-    int n = 1;
-    int rep = i;
-    for(n = 1; n <= j; n++)
+    int n = 0;
+    int rep = 1;
+    for(n = 0; n < j; n++)
         rep = rep * i;
     return rep;
 }
@@ -40,7 +40,7 @@ int main() {
    else if( str == '^')
        printf("and the xor is %d",(int) i ^ (int) j);
    else if( str == 'p')
-       printf("and %d to the power %d is %d", (int) i, (int) j, pof((int) i,(int) j)); 
+       printf("and %d to the power %d is %d", (int) i, (int) j, pof(i, j)); 
 
    return 0;
 }

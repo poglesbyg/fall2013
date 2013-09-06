@@ -1,0 +1,15 @@
+#!/bin/zsh
+echo hello; echo there
+
+$1
+while (i!=$2)
+    do
+        if [ -x $1 ]; then 
+            echo "File $1 exists."; cp $1 $1.bak;
+            $2--;
+        else 
+            echo "File $1 not found."; touch $1
+        fi; echo "File test complete."
+            $2--;
+    done
+            
