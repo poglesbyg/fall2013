@@ -1,0 +1,26 @@
+%        File: oblig1.tex
+%     Created: Tue Sep 24 11:00 AM 2013 C
+% Last Change: Tue Sep 24 11:00 AM 2013 C
+%
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\begin{document}
+\title{INF102 Inlevering 1 hausten 2013}
+\author{Paul Grant}
+\date{\today}
+\maketitle
+\section{Oppgave 1}
+\paragraph{
+  What is the running time for these code fragments? Answer with a $\Theta$ -relation.\\\\
+  a) Given $n \leq p \leq m $ there are three separate loops that must be taken into account giving us the relation $\Theta(n*p*m)$.\\\\
+  b) Given $p \leq q = n$ and both p and q are affected by the if/else statement depending on the value of m -- this is a binary search. So $\Theta(logn)$.\\\\
+  c) Given $n*\sum\limits_{k=0}^n = \frac{1}{2^k$} this geometric set converges on 2 giving us $\Theta(n)$.\\\\
+}
+\section{Oppgave 2}
+\paragraph{
+  a) $20n^4+123n^2+1000 log(n)$\\$~(20n^4)$\\\\
+  b) $120n^3+5n^2log(n)$\\$~(120n^3)$\\\\
+}
+\end{document}
+
+

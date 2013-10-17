@@ -1,0 +1,66 @@
+Exercise 4:
+-lexical scoping
+-store
+A. Java/Pascal -like
+B. anon functions
+C. garbage collector
+D. static for locals
+
+Term project
+-learn something: read a paper/chapter
+-do something: implement something
+---> expect to spend time on implementing the compilers/parsers
+-share: everybody learns a little bit
+-supervised: make sure that you keep in touch
+
+Timeframe:
+->22nd Oct -think
+- 25th Oct -decide
+- end of Nov - finished
+- begin of Dec
+
+1.Programming Lang
+-functional
+-> evaluator based
+-> anon/lambda functions
+-> algebraic data types (haskell and rascal: allows data tree)
+-> REPL
+
+-imperative
+-> compiler (to JVM/C/Java/ARM)
+-> static typing (type checker)
+-> structures, arrays
+-> optimizer
+
+*frontend
+*optimizer
+*code generator
+*garbage collector
+*IDE
+
+
+-dynamic
+-> REPL
+-> functional or imperative
+-> dynamic typing
+
+2.Make a domain-specific language
+-evaluate/compile to Java
+-embed in Haskell,C++
+-3D printing
+-graph/tree algo
+-game scripting
+-satellite control system
+
+3. Tree-traversal
+
+4. Code formatting
+
+Technology!!!
+- several people doing the same thing with different tech -- would be cool
+- Rascal, plain Java
+- ANTLR + Java
+- Lisp/Scheme/Racket
+- Haskell/ML
+- Nuthatch, Stratego/Spoofex/MPS
+- Xtext

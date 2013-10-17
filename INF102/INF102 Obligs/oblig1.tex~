@@ -1,0 +1,53 @@
+%        File: oblig1.tex
+%     Created: Tue Sep 24 11:00 AM 2013 C
+% Last Change: Tue Sep 24 11:00 AM 2013 C
+%
+\documentclass[a4paper]{article}
+\usepackage{amsmath}
+\usepackage{listings}
+\lstset{language = Java}
+
+  
+\begin{document}
+\title{INF102 Inlevering 1 hausten 2013}
+\author{Paul Grant}
+\date{\today}
+\maketitle
+\section*{Oppgave 1}{
+    \subsection*{a)}{
+        What is the running time for these code fragments? Answer with a $\Theta$ -relation.\\\\
+        Given $n \leq p \leq m $ there are three separate loops that must be taken into account giving us the relation $\Theta(n*p*m)$.
+    }
+    \subsection*{b)}{
+        Given $p \leq q = n$ and both p and q are affected by the if/else statement depending on the value of m -- this is a binary search. So $\Theta(logn)$.
+    }
+    \subsection*{c)}{
+      Given $n*\sum\limits_{k=0}^{log(n)} \frac{1}{2^k}$ this geometric set converges on 2 giving us $\Theta(n)$.
+    }
+}
+\section*{Oppgave 2}{
+    \subsection*{a)}{
+        $20n^4+123n^2+1000 log(n)$\\$\sim(20n^4)$
+    }
+    \subsection*{b)}{
+        $120n^3+5n^2log(n)$\\$\sim(120n^3)$
+    }
+    \subsection*{c)}{
+        $100n^4 + 2^n$\\$\sim(2^n)$
+    }
+    \subsection*{d)}{
+        $n+n^log(n)+log(n)$\\$\sim(n)$
+    }
+    \subsection*{e)}{
+        $2^10+n$\\$\sim(n)$
+    }
+    \subsection*{f)}{
+        $2^{10}n$\\$\sim(2^{10}n)$
+    }
+}
+\section*{Oppgave 3}{
+    \subsection*{a)}{
+    
+\end{document}
+
+

@@ -1,0 +1,45 @@
+public static void main(String[] args) 
+{
+    int rows = 2;
+    int columns = 50;
+
+    int[][] anArray = new int[rows][columns];
+
+    Random rand = new Random();
+    
+    for (int i = 0; i < anArray.length; i++) 
+    {
+        for (int j = 0; j < anArray[0].length; j++) 
+        {
+            int n = rand.nextInt(100);
+            anArray[i][j] = n;
+        }
+    }
+    
+    int []temp;
+    for (int i=0;i<anArray.length;i++) 
+    {
+        
+        for (int j=0;j<anArray.length-i;j++ )
+        {
+            if (anArray[i][j]>anArray[i][j+1])
+            {
+                
+                temp =anArray[j];
+                anArray[j+1]=anArray[j];
+                anArray[j+1]=temp;
+            }
+        }     
+    
+        
+        
+        for (int i = 0; i < anArray.length; i++) 
+        {
+            for (int j=0;j<anArray.length-i;j++ )
+            {
+                
+                System.out.println(anArray[i][j]);
+            }
+        }   
+    }   
+}
